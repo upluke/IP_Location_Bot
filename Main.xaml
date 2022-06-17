@@ -165,6 +165,7 @@
                             </ui:WaitUiElementAppear>
                           </ui:AnchorBase.AnchorProvider>
                         </ui:AnchorBase>
+                        <ui:WriteCell Cell="[&quot;B&quot; +(RowNumber+2).ToString]" DisplayName="Write Cell Country" sap:VirtualizedContainerService.HintSize="724.8,116" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Sheet1" Text="[Country]" WorkbookPath="IPs.xlsx" />
                         <ui:AnchorBase AnchorPosition="Left" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="724.8,200" sap2010:WorkflowViewState.IdRef="AnchorBase_2">
                           <ui:AnchorBase.Action>
                             <ActivityAction x:TypeArguments="ui:Anchor">
@@ -209,6 +210,7 @@
                             </ui:WaitUiElementAppear>
                           </ui:AnchorBase.AnchorProvider>
                         </ui:AnchorBase>
+                        <ui:WriteCell Cell="[&quot;C&quot; +(RowNumber+2).ToString]" DisplayName="Write Region" sap:VirtualizedContainerService.HintSize="724.8,116" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Sheet1" Text="[Region]" WorkbookPath="IPs.xlsx" />
                         <ui:AnchorBase AnchorPosition="Left" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="724.8,200" sap2010:WorkflowViewState.IdRef="AnchorBase_3">
                           <ui:AnchorBase.Action>
                             <ActivityAction x:TypeArguments="ui:Anchor">
@@ -253,8 +255,6 @@
                             </ui:WaitUiElementAppear>
                           </ui:AnchorBase.AnchorProvider>
                         </ui:AnchorBase>
-                        <ui:WriteCell Cell="[&quot;B&quot; +(RowNumber+2).ToString]" DisplayName="Write Cell Country" sap:VirtualizedContainerService.HintSize="724.8,116" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Sheet1" Text="[Country]" WorkbookPath="IPs.xlsx" />
-                        <ui:WriteCell Cell="[&quot;C&quot; +(RowNumber+2).ToString]" DisplayName="Write Region" sap:VirtualizedContainerService.HintSize="724.8,116" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Sheet1" Text="[Region]" WorkbookPath="IPs.xlsx" />
                         <ui:WriteCell Cell="[&quot;D&quot; +(RowNumber+2).ToString]" DisplayName="Write Cell Country" sap:VirtualizedContainerService.HintSize="724.8,116" sap2010:WorkflowViewState.IdRef="WriteCell_3" SheetName="Sheet1" Text="[City]" WorkbookPath="IPs.xlsx" />
                         <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="724.8,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[Country+Region+City]" />
                       </Sequence>
